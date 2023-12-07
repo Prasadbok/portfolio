@@ -1,0 +1,194 @@
+{% load static %}
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>  
+    <div id="header">
+        <div class="container">
+            <nav>
+            <img src="{% static 'images/logo1.png' %}" class="logo">
+                <ul>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about1">about</a></li>
+                    <li><a href="#portfolio">My projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Python devloper</p>
+                <h1>Hi, I'm <span>Prasad</span><br> From hyderabad</h1>
+            </div>
+        </div>
+    </div>
+<!------------------about------------------------>
+<div id="about">
+    <div class="container " id="about1">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="{% static 'images/prasad.png' %}">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A Python Developer is a member of a software team who is proficient in creating, designing, and
+                     delivering computer applications and other programs in Python. A python developer is also responsible 
+                     for locating and correcting errors (debugging) in Python-based development projects.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>opps concepts<br>file handling</li>
+                        <li><span>SQL</span><br>SQL join<br>set operator</li>
+                        <li><span>Frame works</span><br>Django</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Easy2learn</span><br>Software Engneering<br>afjksjfksafksjfkasjjsajfaksasfas
+                        sfjskfjksjfaskjjla kkj kj kjk jk ll k</li>                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2022</span><br>Master of Computer applications</li>
+                        <li><span>2017-2020</span><br>Bechalor in compuerScience </li>
+                        <li><span>2015-2017</span><br>InterMediate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------project------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="{% static 'images/rolls royal.jpg' %}">
+                <div class="layer">
+                    <h3>Car Milage App</h3>
+                    <p>sfksaj kjka asf  kkjfkjkj nkkfjskfas kajk jkjsf aj kjkajkjakjkjakj kjak jkjakjjaj k</p>
+                    <a href="#mpg.html" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="{% static 'images/work-2.png' %}">
+                <div class="layer">
+                    <h3>Car Milage App</h3>
+                    <p>sfksaj kjka asf  kkjfkjkj nkkfjskfas kajk jkjsf aj kjkajkjakjkjakj kjak jkjakjjaj k</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="{% static 'images/work-2.png' %}">
+                <div class="layer">
+                    <h3>Car Milage App</h3>
+                    <p>sfksaj kjka asf  kkjfkjkj nkkfjskfas kajk jkjsf aj kjkajkjakjkjakj kjak jkjakjjaj k</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work" name="prasad">
+                <img src="{% static 'images/work-2.png' %}">
+                <div class="layer">
+                    <h3>Car Milage App</h3>
+                    <p>sfksaj kjka asf  kkjfkjkj nkkfjskfas kajk jkjsf aj kjkajkjakjkjakj kjak jkjakjjaj k</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work" name="prasad">
+                <img src="{% static 'images/work-2.png' %}">
+                <div class="layer">
+                    <h3>Car Milage App</h3>
+                    <p>sfksaj kjka asf  kkjfkjkj nkkfjskfas kajk jkjsf aj kjkajkjakjkjakj kjak jkjakjjaj k</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work" name="prasad">
+                <img src="{% static 'images/work-2.png' %}">
+                <div class="layer">
+                    <h3>Car Milage App</h3>
+                    <p>sfksaj kjka asf  kkjfkjkj nkkfjskfas kajk jkjsf aj kjkajkjakjkjakj kjak jkjakjjaj k</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <button class="btn" id="btn" onclick="seemore()">see more</button></div>
+</div>
+
+<!------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h6 class="sub-title">Contact Me</h6>
+                <p><i class="fa-solid fa-envelope"></i> prasad7141597@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 7981098158</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://www.instagram.com/prasad.2131/?igshid=YzAwZjE1ZTI0Zg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/venkata-durga-prasad-bokka-b66244234/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download="" class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form action="submit" name="submit" >
+                    <input type="text" name="Name" placeholder="your name" required="">
+                    <input type="email" name="email" placeholder="your email" required="">
+                    <textarea name="Message" row="60" placeholder="Your feedback"></textarea>
+                    <button type="submit"  class="btn btn2 btn3">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="thank-for-watching">
+        <p>Thank you for watching my website</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+<script>
+    var isExpanded = false;
+    var btn = document.getElementById("btn");
+    function seemore() {
+            if(!isExpanded) {
+                isExpanded = true;
+                btn.textContent = "see less"
+                const s = document.getElementsByName("prasad")
+                for (i=0;i<s.length;i++)
+                    s[i].style.display="flex"
+                    
+            } 
+            else {
+                isExpanded = false;
+                const s = document.getElementsByName("prasad")
+                for (i=0;i<s.length;i++)
+                    s[i].style.display="none"
+                btn.textContent = "see more"
+            }
+    }
+
+                
+</script>
+</body></html>
